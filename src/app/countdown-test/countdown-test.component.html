@@ -1,0 +1,14 @@
+<p>
+  countdown-test works!
+</p>
+<input type="text" size="4" [(ngModel)]="minute_A"/>
+<input type="text" size="4" [(ngModel)]="minute_B"/>
+:
+<input type="text" size="4" [(ngModel)]="second_A" />
+<input type="text" size="4" [(ngModel)]="second_B" />
+
+<br /> <br />
+<button (click)="startCountDown()">Start the time</button>
+<div *ngIf="is_finish" style="color:red;">
+  <h1>Finished</h1>
+</div>

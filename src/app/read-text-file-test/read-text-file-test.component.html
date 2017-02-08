@@ -1,0 +1,11 @@
+<p>
+  read-text-file-test works!
+</p>
+<div class="form-group">
+  <label for="exampleInputFile">File input</label>
+  <input type="file" (change)="changeEvent($event)" class="form-control-file" id="myFile" aria-describedby="fileHelp">
+  <textarea id="myTextArea" rows="4" columns="20" #textarea [(ngModel)]="spy">{{ text }}</textArea>
+  <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+  <button (click)="saveFile($event)">Save file</button>
+  <h1>{{ spy }}</h1>
+</div>
