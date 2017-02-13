@@ -11,6 +11,8 @@ import { SwitchTestComponent } from './switch-test/switch-test.component';
 import { ClockTestComponent } from './clock-test/clock-test.component';
 import { ReadTextFileTestComponent } from './read-text-file-test/read-text-file-test.component';
 import { CountdownTestComponent } from './countdown-test/countdown-test.component';
+import { TrelloComponent } from './trello/trello.component';
+import { SnakeTestComponent } from './snake-test/snake-test.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CountdownTestComponent } from './countdown-test/countdown-test.componen
     SwitchTestComponent,
     ClockTestComponent,
     ReadTextFileTestComponent,
-    CountdownTestComponent
+    CountdownTestComponent,
+    TrelloComponent,
+    SnakeTestComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,14 @@ import { CountdownTestComponent } from './countdown-test/countdown-test.componen
       {
         path:'test',
         component: TestCmpComponent
+      },
+      {
+        path:'trello',
+        component: TrelloComponent
+      },
+      {
+        path:'snake',
+        component: SnakeTestComponent
       }
     ])
   ],
